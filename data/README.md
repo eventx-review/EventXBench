@@ -71,8 +71,7 @@ validation_df = load_task(
 )
 ```
 
-After the v2 migration is published and its access conditions are accepted,
-the equivalent hosted interface will be:
+The same v2 configs are also available now through the hosted interface:
 
 ```python
 from datasets import load_dataset

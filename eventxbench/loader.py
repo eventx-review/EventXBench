@@ -14,7 +14,7 @@ from typing import Optional
 
 import pandas as pd
 
-# Default HF repo -- update after publishing
+# Default HF repo
 HF_REPO = "ANONYMOUS/EventXBench"  # repository id withheld for anonymous review
 
 VALID_TASKS = {"t1", "t2", "t3", "t4", "t5", "t6", "t7"}

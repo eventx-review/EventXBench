@@ -1,6 +1,6 @@
 # EventX: A Multimodal Benchmark Linking Social Media Posts to Prediction Market Dynamics
 
-**Hosted snapshot (gated; currently legacy schema): [ANONYMOUS/EventXBench](https://huggingface.co/datasets/ANONYMOUS/EventXBench)**
+**Hosted dataset: v2 release (configs t1–t6); access details withheld for anonymous review.**
 
 [![Dataset on HF](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-EventXBench-blue)](https://huggingface.co/datasets/ANONYMOUS/EventXBench)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -112,8 +112,7 @@ versioned KDD data directories. Obtain the dated
 release maintainers, verify the included manifest hashes, and pass the
 unpacked directory explicitly, for example
 `--local-dir KDD/data/t1_kdd_v2` or
-`--data-dir KDD/data/t4_kdd_v2`. Do not omit these paths until the hosted v2
-configs have been published.
+`--data-dir KDD/data/t4_kdd_v2`.
 
 T2 contextual baselines require auxiliary frozen artifacts that are not a
 single loader split. Point `--data-dir` at a directory with this layout:
