@@ -2,7 +2,6 @@
 
 **Hosted dataset: v2 release (configs t1–t6); access details withheld for anonymous review.**
 
-[![Dataset on HF](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-EventXBench-blue)](https://huggingface.co/datasets/ANONYMOUS/EventXBench)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 **EventX** is a multimodal benchmark connecting Twitter/X posts to Polymarket prediction-market dynamics. The current release defines six canonical tasks across two tiers: **resolution** (human-reviewed ground truth) and **forecast** (causally constructed labels from later market data). The July 2026 KDD releases use versioned, leakage-audited temporal splits.
