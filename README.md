@@ -1,10 +1,10 @@
 # EventX: A Multimodal Benchmark Linking Social Media Posts to Prediction Market Dynamics
 
-**Hosted dataset: v2 release (configs t1–t6); access details withheld for anonymous review.**
+**Benchmark:** EventX full corpus (33.9M posts; 155,792 markets). **Evaluation release:** versioned, task-specific T1–T6 subsets. Hosted access details are withheld for anonymous review.
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-**EventX** is a multimodal benchmark connecting Twitter/X posts to Polymarket prediction-market dynamics. The current release defines six canonical tasks across two tiers: **resolution** (human-reviewed ground truth) and **forecast** (causally constructed labels from later market data). The July 2026 KDD releases use versioned, leakage-audited temporal splits.
+**EventX** is a multimodal benchmark connecting Twitter/X posts to Polymarket prediction-market dynamics. The current release defines six canonical tasks across two tiers: **resolution** (human-reviewed ground truth) and **forecast** (causally constructed labels from later market data). The versioned July 2026 EventX evaluation releases use leakage-audited temporal splits; release identifiers keep their original `kdd.v2` names for reproducibility.
 
 ## Quick Start
 
@@ -157,7 +157,7 @@ features, and forbidden post-decision fields.
 
 ### Privacy
 
-Tweet text is **not** included in the public release to comply with Twitter/X Terms of Service. The `posts_no_text.jsonl` file contains tweet IDs for rehydration via the Twitter API. Market data from Polymarket is fully included.
+**Post-text access depends on the artifact.** The general post-ID corpus (`posts_no_text.jsonl`) omits tweet text and may require authorized rehydration (retrieving a post's content from its ID via the X API). T2/T3 task exports contain task-specific text fields under their applicable access conditions. Market-side questions, rules, price data, and the frozen T1 features can be used without rehydrating posts. Access and redistribution remain subject to source terms.
 
 ## Baselines
 
@@ -273,5 +273,5 @@ See [LEADERBOARD.md](LEADERBOARD.md) for current results. To submit, open a pull
 
 - **Code**: MIT License
 - **Data**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
-- Tweet text excluded; use Twitter API for rehydration
-- Polymarket data included under fair use for research
+- Post text: see [Privacy](#privacy); access depends on the artifact
+- Polymarket data are provided subject to the applicable platform API, data-use, and redistribution terms
